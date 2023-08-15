@@ -1,0 +1,18 @@
+---
+import MainLayout from "../layouts/main.astro";
+import Button from "../components/Button.svelte";
+import * as markdown from "../docs/markdown.md";
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+
+<MainLayout content={{ title: "Astro + Svelte + Tailwind" }}>
+  <div class="flex flex-col place-items-center gap-8 py-8">
+    <p>Astro + Svelte + Tailwind + DaisyUI</p>
+    <Button text="Count" client:only>Svelte Button in Astro!</Button>
+    <article class="prose max-w-none">
+      <markdown.Content />
+    </article>
+  </div>
+</MainLayout>

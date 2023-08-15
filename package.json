@@ -1,0 +1,26 @@
+{
+  "name": "",
+  "description": "",
+  "type": "module",
+  "version": "0.0.1",
+  "author": "Jirawat Boonkumnerd <contact@ntsd.dev> (https://ntsd.dev)",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "devDependencies": {
+    "@astrojs/svelte": "^3.1.0",
+    "@astrojs/tailwind": "^4.0.0",
+    "@tailwindcss/typography": "^0.5.9",
+    "astro": "^2.10.7",
+    "astrojs-service-worker": "^1.0.0",
+    "autoprefixer": "^10.4.14",
+    "daisyui": "^3.5.1",
+    "nanostores": "^0.9.3",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.2"
+  }
+}
