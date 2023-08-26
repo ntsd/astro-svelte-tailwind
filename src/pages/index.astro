@@ -6,7 +6,13 @@ import * as markdown from "../docs/markdown.md";
 // https://docs.astro.build/core-concepts/astro-components/
 ---
 
-<MainLayout content={{ title: "Astro + Svelte + Tailwind" }}>
+<MainLayout
+  content={{
+    title: "Astro + Svelte + Tailwind",
+    description:
+      "Astro Starter Template with Svelte, Tailwind, DaisyUI, and Service Worker",
+  }}
+>
   <div class="flex flex-col place-items-center gap-8 py-8">
     <Button text="Count" client:only>Svelte Button in Astro!</Button>
     <article class="prose max-w-none">
