@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "description": "",
+  "name": "astro-svelte-tailwind",
+  "description": "Astro Starter Template with Svelte, Tailwind, DaisyUI, and Service Worker",
   "type": "module",
   "version": "0.0.1",
   "author": "Jirawat Boonkumnerd <contact@ntsd.dev> (https://ntsd.dev)",

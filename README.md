@@ -1,6 +1,6 @@
 # Astro Svelte Tailwind
 
-Astro + Svelte + Tailwind + DaisyUI + Nano Stores
+Astro Starter Template with Svelte, Tailwind, DaisyUI, and Service Worker.
 
 ```sh
 npm create astro@latest -- --template ntsd/astro-svelte-tailwind
