@@ -1,4 +1,8 @@
-<button id="darkmode-toggle" class="swap swap-rotate bg-base-100 p-2" aria-label="dark mode">
+<button
+  id="darkmode-toggle"
+  class="swap swap-rotate bg-base-100 p-2"
+  aria-label="dark mode"
+>
   <div class="swap-on">
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -35,17 +39,23 @@
 </button>
 
 <script>
-  import { darkModeAtom, getDarkMode, setDarkMode } from '../stores/darkModeStore';
+  import {
+    darkModeAtom,
+    getDarkMode,
+    setDarkMode,
+  } from "../stores/darkModeStore";
 
-  const button = document.getElementById('darkmode-toggle') as HTMLButtonElement;
+  const button = document.getElementById(
+    "darkmode-toggle"
+  ) as HTMLButtonElement;
 
   let darkMode = getDarkMode();
 
   const setToggleClass = (darkMode: boolean) => {
     if (darkMode) {
-      button.classList.add('swap-active');
+      button.classList.add("swap-active");
     } else {
-      button.classList.remove('swap-active');
+      button.classList.remove("swap-active");
     }
   };
 

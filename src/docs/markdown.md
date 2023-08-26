@@ -1,19 +1,23 @@
-# Markdown
+<!-- https://docs.astro.build/en/guides/markdown-content -->
 
-<!-- Guide https://docs.astro.build/en/guides/markdown-content -->
+# Astro Svelte Tailwind
 
-## Blockquotes
-
-> Blockquotes
->
-> > Blockquotes
-
-## Code
+Astro + Svelte + Tailwind + DaisyUI + Nano Stores
 
 ```sh
-echo "Hello, world"
+npm create astro@latest -- --template ntsd/astro-svelte-tailwind
 ```
 
-## Inline code
+## Installed libraries
 
-This web site is using `markedjs/marked`.
+Build: Astro
+
+Component: Svelte
+
+Style: Tailwind + [Typography](https://github.com/tailwindlabs/tailwindcss-typography)
+
+Theme: [DaisyUI](https://github.com/saadeghi/daisyui)
+
+State: [Nano Stores](https://github.com/nanostores/nanostores)
+
+PWA and Service Worker: [astrojs-service-worker](https://github.com/tatethurston/astrojs-service-worker)
