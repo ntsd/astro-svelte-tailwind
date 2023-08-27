@@ -15,7 +15,9 @@ const { content } = Astro.props;
   <body>
     <div class="flex flex-col min-h-screen">
       <Navbar />
-      <div class="flex-grow container mx-auto justify-items-center">
+      <div
+        class="flex-grow container mx-auto flex flex-col justify-items-center py-8 px-4 gap-8"
+      >
         <slot />
       </div>
     </div>

@@ -1,7 +1,7 @@
 ---
 import MainLayout from "../layouts/main.astro";
 import Button from "../components/Button.svelte";
-import * as markdown from "../docs/markdown.md";
+import * as README from "../../README.md";
 
 // https://docs.astro.build/core-concepts/astro-components/
 ---
@@ -13,10 +13,11 @@ import * as markdown from "../docs/markdown.md";
       "Astro Starter Template with Svelte, Tailwind, DaisyUI, and Service Worker",
   }}
 >
-  <div class="flex flex-col place-items-center gap-8 py-8">
-    <Button text="Count" client:only>Svelte Button in Astro!</Button>
-    <article class="prose max-w-none">
-      <markdown.Content />
-    </article>
+  <div>
+    <!-- https://docs.astro.build/en/reference/directives-reference -->
+    <Button text="Count" client:idle>Svelte Button in Astro!</Button>
   </div>
+  <article class="prose max-w-none">
+    <README.Content />
+  </article>
 </MainLayout>

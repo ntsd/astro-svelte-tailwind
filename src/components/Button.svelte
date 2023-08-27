@@ -1,6 +1,7 @@
 <!-- https://docs.astro.build/en/guides/integrations-guide/svelte/ -->
 <script lang="ts">
   export let text: string;
+
   let count = 0;
 </script>
 
