@@ -22,3 +22,7 @@ please remove if you don't use them
 - [DaisyUI](https://github.com/saadeghi/daisyui)
 - [Nano Stores](https://github.com/nanostores/nanostores)
 - [astrojs-service-worker](https://github.com/tatethurston/astrojs-service-worker)
+
+## PageSpeed Insights Score
+
+The PageSpeed Insights score will be full for all cetegories. [Test Results](https://pagespeed.web.dev/analysis/https-ntsd-github-io-astro-svelte-tailwind/5ta4jh3z09?form_factor=mobile)
