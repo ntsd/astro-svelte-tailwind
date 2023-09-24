@@ -19,7 +19,6 @@
     "astrojs-service-worker": "^1.1.0",
     "autoprefixer": "^10.4.16",
     "daisyui": "^3.7.7",
-    "nanostores": "^0.9.3",
     "postcss": "^8.4.30",
     "svelte": "^4.2.1",
     "tailwindcss": "^3.3.3"

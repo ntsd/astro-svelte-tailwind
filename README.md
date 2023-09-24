@@ -20,7 +20,6 @@ please remove if you don't use them
 - Svelte
 - Tailwind + [Typography](https://github.com/tailwindlabs/tailwindcss-typography)
 - [DaisyUI](https://github.com/saadeghi/daisyui)
-- [Nano Stores](https://github.com/nanostores/nanostores)
 - [astrojs-service-worker](https://github.com/tatethurston/astrojs-service-worker)
 
 ## PageSpeed Insights Score

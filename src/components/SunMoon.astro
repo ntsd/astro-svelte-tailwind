@@ -10,7 +10,7 @@
       viewBox="0 0 24 24"
       stroke-width="1.5"
       stroke="currentColor"
-      class="h-5 w-5 md:h-6 md:w-6"
+      class="h-5 w-5 lg:h-6 lg:w-6"
     >
       <path
         stroke-linecap="round"
@@ -27,7 +27,7 @@
       viewBox="0 0 24 24"
       stroke-width="1.5"
       stroke="currentColor"
-      class="h-5 w-5 md:h-6 md:w-6"
+      class="h-5 w-5 lg:h-6 lg:w-6"
     >
       <path
         stroke-linecap="round"
@@ -38,36 +38,45 @@
   </div>
 </button>
 
-<script>
-  import {
-    darkModeAtom,
-    getDarkMode,
-    setDarkMode,
-  } from "../stores/darkModeStore";
+<script is:inline>
+const localStorageKey = "darkMode";
+let localDarkMode = localStorage.getItem(localStorageKey);
+let darkMode = false;
+// initial dark mode from local storage or media
+switch (localDarkMode) {
+  case "true":
+    darkMode = true;
+    break;
+  case "false":
+    darkMode = false;
+    break;
+  case null:
+    darkMode =
+      window?.matchMedia?.("(prefers-color-scheme:dark)")?.matches || false;
+}
 
-  const button = document.getElementById(
-    "darkmode-toggle"
-  ) as HTMLButtonElement;
+const button = document.getElementById("darkmode-toggle");
+const setToggleClass = (darkMode) => {
+  if (darkMode) {
+    button.classList.add("swap-active");
+  } else {
+    button.classList.remove("swap-active");
+  }
+};
 
-  let darkMode = getDarkMode();
-
-  const setToggleClass = (darkMode: boolean) => {
-    if (darkMode) {
-      button.classList.add("swap-active");
-    } else {
-      button.classList.remove("swap-active");
-    }
-  };
-
+function setTheme(darkMode) {
   setToggleClass(darkMode);
 
-  darkModeAtom.listen((darkMode) => {
-    darkMode = darkMode;
-  });
+  localStorage.setItem(localStorageKey, darkMode ? "true" : "false");
+  document
+    ?.querySelector("html")
+    ?.setAttribute("data-theme", darkMode ? "dark" : "light");
+}
 
-  button.onclick = () => {
-    darkMode = !darkMode;
-    setToggleClass(darkMode);
-    setDarkMode(darkMode);
-  };
+button.onclick = () => {
+  darkMode = !darkMode;
+  setTheme(darkMode);
+};
+
+setTheme(darkMode);
 </script>
