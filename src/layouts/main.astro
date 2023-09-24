@@ -1,7 +1,12 @@
 ---
 import Navbar from "../components/Navbar.astro";
 
-const { content } = Astro.props;
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
 ---
 
 <html lang="en">
@@ -9,8 +14,8 @@ const { content } = Astro.props;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>{content.title}</title>
-    <meta name="description" content={content.description} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
   </head>
   <body>
     <div class="flex flex-col min-h-screen">
