@@ -6,11 +6,9 @@ Astro Starter Template with Svelte, Tailwind, DaisyUI, and Service Worker.
 npm create astro@latest -- --template ntsd/astro-svelte-tailwind
 ```
 
-or clone the [Github repository](https://github.com/ntsd/astro-svelte-tailwind)
+or clone with Github's "Use this template" option
 
-```sh
-git clone https://github.com/ntsd/astro-svelte-tailwind.git
-```
+[![use this template](https://assets.ntsd.dev/assets/svg/use-this-template.svg)](https://github.com/new?template_name=astro-svelte-tailwind&template_owner=ntsd)
 
 ## Installed Packages
 
