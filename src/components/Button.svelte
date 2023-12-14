@@ -1,6 +1,6 @@
 <!-- https://docs.astro.build/en/guides/integrations-guide/svelte/ -->
 <script lang="ts">
-  let { text } = $props();
+  let { text } = $props<{ text: string }>();
 
   let count = $state(0);
 </script>
