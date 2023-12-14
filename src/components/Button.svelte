@@ -1,14 +1,14 @@
 <!-- https://docs.astro.build/en/guides/integrations-guide/svelte/ -->
 <script lang="ts">
-  export let text: string;
+  let { text } = $props();
 
-  let count = 0;
+  let count = $state(0);
 </script>
 
 <h1><slot /></h1>
 <button
   on:click={() => {
-    count = count + 1;
+    count += 1;
   }}
   class="btn btn-primary"
 >

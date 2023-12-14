@@ -1,6 +1,6 @@
 # [Astro Svelte Tailwind](https://github.com/ntsd/astro-svelte-tailwind)
 
-Astro Starter Template with Svelte, Tailwind, DaisyUI, and Service Worker.
+Astro Starter Template with Svelte 5, Tailwind, DaisyUI, and Service Worker.
 
 ```sh
 npm create astro@latest -- --template ntsd/astro-svelte-tailwind
@@ -15,7 +15,7 @@ or clone with Github's "Use this template" option
 please remove if you don't use them
 
 - Astro
-- Svelte
+- Svelte 5
 - Tailwind + [Typography](https://github.com/tailwindlabs/tailwindcss-typography)
 - [DaisyUI](https://github.com/saadeghi/daisyui)
 - [astrojs-service-worker](https://github.com/tatethurston/astrojs-service-worker)
